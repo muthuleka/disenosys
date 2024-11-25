@@ -14,17 +14,17 @@ import Course from '../Course/Course';
 const Signup = () => {
   return (
     <>
-    <Login/>
+    {/* <Login/> */}
     <Banner/>
     <Content/>
     <Guarantee/>
     <Course/>
-        <div className='w-full h-auto  bg-purple-800  flex  items-center justify-center '>
-          <div className='w-[85%] grid grid-cols-2 p-[20px]'>
-            <div className='w-[100%] h-[100%] bg-white text-black p-[30px]  '>
-                  <div className='w-full h-[20%]  mt-10'>
-                    <h1 className='font-bold  text-4xl text-blue-700 gap-[5px]'>Hello,</h1>
-                    <h1 className='font-bold  text-5xl text-blue-700'>welcome!</h1>
+        <div className='sm:w-full sm:h-auto  bg-purple-800  flex  items-center justify-center '>
+          <div className='sm:w-[85%] grid sm:grid-cols-2 p-[20px] w-[100%]  grid-cols-1'>
+            <div className='w-[100%] h-[100%] bg-white text-black sm:p-[30px] p-0 py-10  '>
+                  <div className='sm:w-full h-[20%]  sm:mt-10 w-[100%]'>
+                    <h1 className='font-bold  sm:text-4xl text-blue-700 gap-[5px] text-2xl'>Hello,</h1>
+                    <h1 className='font-bold  sm:text-5xl text-blue-700 text-3xl'>welcome!</h1>
                   </div>
                   <div className=' w-[100%] border-solid border-2 border-indigo-600 p-3'>
                     <h1>Email Address</h1>
@@ -36,22 +36,22 @@ const Signup = () => {
                     <input className='w-full h-[30px] outline-none text-2xl' type="text" placeholder='............ ' />
 
                   </div>
-                <div className='w-[80%] flex items-center justify-between text-xs'>
+                <div className='sm:w-[80%] flex items-center justify-between text-xs w-[100%]'>
                 <div className='w-20% flex items-center justify-start'>
                   <input type="checkbox" className='mr-[10px]'/>
                   <p>Remember me</p>
                 </div>
                 <p>Forget password?</p>
           </div>
-          <div className='w-[300px] flex flex-direction-column items-center text-center justify-evenly mt-5 mb-10 gap-3'>
-                    <button className=' w-[150px]  h-[35px] gap-[10px] flex items-center justify-center px-16 py-2 bg-pink-500 text-white hover:bg-pink-600 hover:text-white'>Login</button>
-                    <button className=' w-[150px]  h-[35px] flex items-center justify-center border-2 border-blue-500 text-blue-700 py-2 px-16 text-bold hover:bg-blue-700 hover:text-white'>Signup</button>
+          <div className='sm:w-[300px] flex flex-direction-column items-center text-center justify-evenly mt-5 mb-10 gap-3 w-[100%]'>
+                    <button className=' sm:w-[150px]  h-[35px] gap-[10px] flex items-center justify-center sm:px-16 py-2 bg-pink-500 px-8 text-white hover:bg-pink-600 hover:text-white w-[100%]'>Login</button>
+                    <button className='sm:w-[150px]  h-[35px] flex items-center justify-center border-2 border-blue-500 text-blue-700 py-2 sm:px-16 text-bold px-8 hover:bg-blue-700 hover:text-white w-[100%]'>Signup</button>
           </div>
-          <div className='w-[60%] h-[40px]  flex  justify-start items-center gap-8 '>
+          <div className='sm:w-[60%] h-[40px]  flex  justify-start items-center gap-8 w-[100%]'>
             <p className='text-xs font-bold text-gray-700 '>FOLLOW</p>
-            <BiLogoFacebook className='w-[20px] h-[20px] text-gray-700'/>
-            <FaTwitter className=' w-[20px] h-[20px] text-gray-700 ' />
-            <GrInstagram className='w-[20px] h-[20px] text-gray-700' />
+            <BiLogoFacebook className='sm:w-[20px] sm:h-[20px] text-gray-700 '/>
+            <FaTwitter className=' sm:w-[20px] sm:h-[20px] text-gray-700 ' />
+            <GrInstagram className='sm:w-[20px] sm:h-[20px] text-gray-700' />
           </div>
           </div>
         <div className='w-[100%] h-[100%] bg-gray-200 '>

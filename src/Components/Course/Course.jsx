@@ -68,17 +68,17 @@ const Course = () => {
   ];
   return (
     <>
-      <div className="w-full h-auto  flex flex-col mb-6">
-        <div className="w-[100%] h-[130px]">
-          <p className="text-5xl font-semibold flex items-center justify-center text-custom-blue">
+      <div className="sm:w-full h-auto  flex flex-col mb-6 ">
+        <div className="sm:w-[100%] sm:h-[130px] h-[80px]">
+          <p className="sm:text-5xl font-semibold flex items-center justify-center text-custom-blue text-xl">
             All Online Course
           </p>
         </div>
-        <div className="w-[100%] h-[100%]  flex items-start justify-between p-[20px] gap-6">
-          <div className="w-[100%] h-[90%] mr-[30px] ">
-            <div className=" check w-[100%] h-[80vh] grid grid-cols-3 gap-6 overflow-scroll ">
+        <div className="sm:w-[100%] sm:h-[100%]  flex sm:flex-row items-start justify-between flex-col p-[20px] gap-6 ">
+          <div className="sm:w-[100%] sm:h-[90%] sm:mr-[30px]  mr-0 h-auto ">
+            <div className=" check w-[100%] sm:h-[80vh] sm:grid sm:grid-cols-3 sm:gap-6  sm:overflow-scroll  grid-cols-1 overflow-auto h-[100%]  ">
               {course.map(function (data) {
-                return (<div className="w-[100%] h-[100%] flex flex-col rounded-2xl rounded-r-2xl  p-[20px] border-2 border-gray-300">
+                return (<div className="sm:w-[100%] sm:h-[100%] sm:mb-0 flex flex-col rounded-2xl rounded-r-2xl  p-[20px] border-2 border-gray-300 h-auto mb-7">
                     <div className="w-[100%] h-[200px]">
                       <img src={data.image} className="w-[100%] h-[100%] object-fit:contain; " alt=""/>
                     </div>
@@ -97,7 +97,7 @@ const Course = () => {
              
             </div>
           </div>
-          <div className="w-[31%] h-[85%]">
+          <div className="sm:w-[31%] sm:h-[85%] w-[100%] h-[100%]">
             <div className="w-[100%]  ">
                 <button className="w-[100%] px-5 py-2 mb-6 bg-custom-blue rounded-lg text-2xl text-white font-bold hover:bg-blue-500 transition-all duration-700 ">All Courses</button>
             </div>
