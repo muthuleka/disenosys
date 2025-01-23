@@ -9,12 +9,14 @@ import Content from '../Content/Content';
 import Guarantee from '../Guarantee/Guarantee';
 import Footer from '../Footer/Footer';
 import Course from '../Course/Course';
+import Registration from '../Navbar/Registration';
 
 
 const Signup = () => {
   return (
     <>
-    {/* <Login/> */}
+    <Registration/>
+    <Login/>
     <Banner/>
     <Content/>
     <Guarantee/>
