@@ -15,7 +15,6 @@ import Registration from '../Navbar/Registration';
 const Signup = () => {
   return (
     <>
-    <Registration/>
     <Login/>
     <Banner/>
     <Content/>
